@@ -1,0 +1,76 @@
+
+/* layout.html for navbar collapse */
+@media (min-width:450px) {
+    #boo {
+        color:red;
+    }
+}
+
+@media (max-width:449px) {          
+    #boo {
+        color: blue;
+    }
+}
+
+/* register.html */
+#container-reg {
+   display:flex;
+   flex-wrap:nowrap;
+   justify-content: center;
+   text-align: left;
+}
+
+/* login.html */
+#container-login{
+    margin-top: 20px;
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content: center;
+    text-align: left;
+}
+#log{
+    text-align: center;
+}
+#p_reset{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#log-link{
+    margin:auto;
+    max-width: 200px;
+    text-align: center;
+}
+
+#btn-reg {
+    margin-top:5px;
+    text-align: right;
+}
+
+/* new event container */
+#container-new-event {
+    display:flex;
+    justify-content: center;
+    margin:20px;
+}
+
+
+/* index.html all-events-view */
+#all-events-view, #past-events-view, #event-view{
+    text-align:center;
+    max-width:550px;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+}
+
+#list1, #list2, #list3{
+    display:block;
+    margin-top: 50px;
+   
+}
+
+#past_btn{
+    float:right;
+
+}

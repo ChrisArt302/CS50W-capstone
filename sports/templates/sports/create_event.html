@@ -1,0 +1,27 @@
+{% extends "sports/layout.html" %}
+{% load static %}
+
+{% block title %}Create Event{% endblock %}
+
+{% block body %}
+<h2 style="margin-left: 20px;">Create an event</h2>
+
+<!--<input id="autocomplete" placeholder="" type="text"  size="25"/>-->
+
+<p id="details"></p>
+
+
+
+<div id="container-new-event" class="form-group">
+    <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{form.as_p}}
+
+        <input type="submit" class="btn btn-secondary" value="Submit">  
+    </form>
+</div>
+{% endblock %}
+
+
+{% block script %}
+{% endblock %}

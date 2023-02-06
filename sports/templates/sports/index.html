@@ -1,0 +1,32 @@
+{% extends "sports/layout.html" %}
+{% load static %}
+
+{% block title %}Index{% endblock %}
+
+{% block body %}
+<h2 style="margin-left: 20px;">Welcome</h2>
+    {% if user.is_authenticated %}
+    <h1 id="username" hidden>{{ user.username}}</h1>
+    {% endif %}
+
+<div id="all-events-view">
+    <h2>Events</h2>
+    <button type="button" id="past_btn" class="btn btn-danger btn-sm">Past Events</button>
+    <ul id="list1" style="list-style: none;"></ul>
+</div>
+
+<div id="past-events-view" style="display:none;"> 
+    <h5>Past Events</h5>
+    <ul id="list3" style="list-style: none;"></ul>
+</div>
+
+<div id="event-view" style="display:none;">
+    <button style="margin-left:30px; display:block;" id="close">Close</button>
+    <ul id="list2" style="list-style: none;"></ul>
+    <p id="notlogged">You must log in to attend an event <a href="{% url 'login' %}">Log In</a></p>
+</div>
+
+{% endblock %}
+
+{% block script %}
+{% endblock %}

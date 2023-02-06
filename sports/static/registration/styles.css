@@ -1,0 +1,22 @@
+/* base.html */
+#christian {
+    color:red;
+    text-align: left;
+}
+
+/* password section */
+#p_reset_form{
+    flex-direction: column;
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#pr_confirm{
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content: center;
+    text-align: center;
+}
